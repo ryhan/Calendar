@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/eventparse.js"> </script>
+	<script type="text/javascript" src="js/load.js"> </script>
+</head>
+<body onload="loadjs(); return false;">
+<header id=nav>
+	Calendar
+	<input id=addevent type=text placeholder='Add Event' onchange='detectsidebar();return false;'></input>
+</header>
+
+<div id=cal>
+	<header id=dates>
+		<div class=date>17 Sunday</div>
+		<div class=date>18 Monday</div>
+		<div class=date>19 Tuesday</div>
+		<div class=date>20 Wednesday</div>
+		<div class=date>21 Thursday</div>
+		<div class=date>22 Friday</div>
+		<div class=date>23 Saturday</div>
+	</header>
+	
+		<div class=day id=0></div>
+		<div class=day id=1></div>
+		<div class=day id=2></div>
+		<div class=day id=3></div>
+		<div class=day id=4></div>
+		<div class=day id=5></div>
+		<div class=day id=6></div>
+</div>
+
+<div id=sidebar>
+	<div id=newevent>
+		<header>Add Event</header>
+		<div id=eventname></div>
+		<div id=eventdate></div>
+		<div id=eventtime></div>
+		<div id=eventlocation></div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
